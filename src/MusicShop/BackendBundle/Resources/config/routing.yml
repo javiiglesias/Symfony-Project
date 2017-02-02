@@ -1,0 +1,19 @@
+music_shop_backend_homepage:
+    path:     /
+    defaults: { _controller: MusicShopBackendBundle:Default:index }
+
+music_shop_backend_categories:
+    path:     /categories
+    defaults: { _controller: MusicShopBackendBundle:Categories:index }
+
+music_shop_backend_add_category:
+    path:     /add-category
+    defaults: { _controller: MusicShopBackendBundle:Categories:addCategory }
+
+music_shop_backend_albums:
+    path:     /albums
+    defaults: { _controller: MusicShopBackendBundle:Categories:index }
+
+music_shop_backend_artists:
+    path:     /artists
+    defaults: { _controller: MusicShopBackendBundle:Categories:index }

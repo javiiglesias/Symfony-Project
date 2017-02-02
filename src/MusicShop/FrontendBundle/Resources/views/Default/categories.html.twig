@@ -1,0 +1,17 @@
+{% extends "MusicShopFrontendBundle:Default:index.html.twig " %}
+{% block title %}Categories{% endblock %}
+{% block page_content %}
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-12 col-md-12">
+                <h4 class="">{{ titol }}</h4>
+            </div>
+            {% for category in categories %}
+                <div class="col-sm-12 col-lg-12 col-md-12">
+                    <p>{{ category.name|upper }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

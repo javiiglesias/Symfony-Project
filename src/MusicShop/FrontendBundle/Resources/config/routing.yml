@@ -1,0 +1,31 @@
+music_shop_frontend_homepage:
+    path:     /
+    defaults: { _controller: MusicShopFrontendBundle:Default:index }
+
+music_shop_frontend_albums:
+    path:     /albums
+    defaults: { _controller: MusicShopFrontendBundle:Albums:index }
+
+music_shop_frontend_album:
+    path:     /album/{id}
+    defaults: { _controller: MusicShopFrontendBundle:Albums:album }
+
+music_shop_frontend_categories:
+    path:     /categories
+    defaults: { _controller: MusicShopFrontendBundle:Categories:index }
+
+music_shop_frontend_category:
+    path:     /category/{id}
+    defaults: { _controller: MusicShopFrontendBundle:Categories:category }
+
+music_shop_frontend_artists:
+    path:     /artists
+    defaults: { _controller: MusicShopFrontendBundle:Artists:index }
+
+music_shop_frontend_artist:
+    path:     /artist/{id}
+    defaults: { _controller: MusicShopFrontendBundle:Artists:artist }
+
+music_shop_frontend_contact_form:
+    path:     /contact
+    defaults: { _controller: MusicShopFrontendBundle:Default:contact }

@@ -1,0 +1,11 @@
+music_shop_backend:
+    resource: "@MusicShopBackendBundle/Resources/config/routing.yml"
+    prefix:   /shop/backend
+
+music_shop_frontend:
+    resource: "@MusicShopFrontendBundle/Resources/config/routing.yml"
+    prefix:   /shop
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

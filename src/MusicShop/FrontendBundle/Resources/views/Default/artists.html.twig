@@ -1,0 +1,18 @@
+{% extends "MusicShopFrontendBundle:Default:index.html.twig " %}
+{% block title %}Artistes{% endblock %}
+{% block page_content %}
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-12 col-md-12">
+                <h4 class="">Llistat d'Artistes</h4>
+            </div>
+            {% for artist in artists %}
+                <div class="col-sm-12 col-lg-12 col-md-12">
+                    <p>{{ artist.name }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
+
